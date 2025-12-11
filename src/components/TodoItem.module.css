@@ -1,0 +1,92 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: #2d2d2d;
+  border: 2px solid #404040;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.item:hover {
+  border-color: #4fc3f7;
+  background: #333333;
+}
+
+.item.completed {
+  opacity: 0.6;
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  accent-color: #4fc3f7;
+  flex-shrink: 0;
+}
+
+.content {
+  flex: 1;
+  font-size: 1.05rem;
+  color: #ffffff;
+  cursor: pointer;
+  word-break: break-word;
+  line-height: 1.5;
+}
+
+.item.completed .content {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.editInput {
+  flex: 1;
+  padding: 0.75rem;
+  font-size: 1.05rem;
+  background: #1a1a1a;
+  border: 2px solid #4fc3f7;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+.editInput:focus {
+  outline: none;
+  border-color: #29b6f6;
+}
+
+.controls {
+  display: flex;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.editButton,
+.deleteButton {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.editButton {
+  background: #4fc3f7;
+  color: #000;
+}
+
+.editButton:hover {
+  background: #29b6f6;
+}
+
+.deleteButton {
+  background: #ef5350;
+  color: #fff;
+}
+
+.deleteButton:hover {
+  background: #e53935;
+}
+
