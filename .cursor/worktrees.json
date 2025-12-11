@@ -1,0 +1,26 @@
+{
+  "worktrees": [
+    {
+      "branch": "opus-4.5",
+      "path": "opus-4.5",
+      "setup": {
+        "commands": ["npm install"]
+      }
+    },
+    {
+      "branch": "gpt-5.1-max",
+      "path": "gpt-5.1-max",
+      "setup": {
+        "commands": ["npm install"]
+      }
+    },
+    {
+      "branch": "composer-1",
+      "path": "composer-1",
+      "setup": {
+        "commands": ["npm install"]
+      }
+    }
+  ]
+}
+
